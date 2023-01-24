@@ -10,10 +10,9 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    bot.reply_to(message, message.text)
-    bot.send_message(message.chat.id, "Bot by Adinai")
-    if "crush" in message.text:
-        g = 5 / 0
+    bot.reply_to(message.chat.id, "Пошел на хуй")
+    if "Тима" in message.text:
+        bot.send_message("Тима суси")
 
 
 bot.infinity_polling()
